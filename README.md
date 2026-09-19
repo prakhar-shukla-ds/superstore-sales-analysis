@@ -75,6 +75,22 @@ The main objectives of this project are to:
 
 ---
 
+# Business Insights
+
+-Technology is the strongest profit contributor. It generated 36.1% of sales but 50.1% of total profit. Copiers alone delivered $56.1K profit at a 37.2% margin, making them a priority for targeted sales campaigns.
+
+-Furniture sales deliver limited profitability. Furniture contributed 32.4% of revenue but only 6.8% of profit, with a 2.6% margin. Tables recorded a $17.8K loss, highlighting the need to review pricing, discounts, and product costs.
+
+-Deep discounts are associated with substantial losses. Sales lines discounted above 20% collectively recorded a $136.0K loss on $364.8K revenue. Introduce margin checks and approval requirements for deeper discounts.
+
+-Regional performance reveals a profitability gap. West led with $739.8K sales and a 15.0% margin, while Central earned only a 7.9% margin on $503.2K sales. Investigate Central’s product mix and discount practices before expanding sales.
+
+-Demand consistently peaks in the fourth quarter. Q4 was the highest-sales quarter in every dataset year and contributed 38.3% of total revenue. Plan inventory, staffing, and campaigns ahead of October–December.
+
+-The highest-spending customer is not the most profitable. Sean Miller generated $25.0K in sales but a $2.0K loss, while Tamara Chand generated $19.1K in sales and $9.0K profit. Include profitability alongside revenue when prioritizing customer rewards and account management.
+
+---
+
 # 🔄 Project Workflow
 
 ```text
@@ -85,19 +101,7 @@ The main objectives of this project are to:
 🗄️ SQL Business Analysis
         ↓
 📊 Tableau Dashboard
-
-```
-
-Technology is the strongest profit contributor. It generated 36.1% of sales but 50.1% of total profit. Copiers alone delivered $56.1K profit at a 37.2% margin, making them a priority for targeted sales campaigns.
-
-Furniture sales deliver limited profitability. Furniture contributed 32.4% of revenue but only 6.8% of profit, with a 2.6% margin. Tables recorded a $17.8K loss, highlighting the need to review pricing, discounts, and product costs.
-
-Deep discounts are associated with substantial losses. Sales lines discounted above 20% collectively recorded a $136.0K loss on $364.8K revenue. Introduce margin checks and approval requirements for deeper discounts.
-
-Regional performance reveals a profitability gap. West led with $739.8K sales and a 15.0% margin, while Central earned only a 7.9% margin on $503.2K sales. Investigate Central’s product mix and discount practices before expanding sales.
-
-Demand consistently peaks in the fourth quarter. Q4 was the highest-sales quarter in every dataset year and contributed 38.3% of total revenue. Plan inventory, staffing, and campaigns ahead of October–December.
-
-The highest-spending customer is not the most profitable. Sean Miller generated $25.0K in sales but a $2.0K loss, while Tamara Chand generated $19.1K in sales and $9.0K profit. Include profitability alongside revenue when prioritizing customer rewards and account management.
         ↓
 💡 Business Insights
+
+```
