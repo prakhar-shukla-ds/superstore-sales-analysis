@@ -2,106 +2,124 @@
 
 ### 📊 End-to-End Data Analytics Project | SQL • Python • Tableau
 
-An end-to-end **Data Analytics project** analyzing Superstore sales data to uncover insights into sales, profitability, customers, products, regions, discounts, and shipping performance.
+An end-to-end data analytics project using **Python, PostgreSQL, and Tableau** to explore retail sales, identify profitability gaps, and uncover business insights.
 
-The project combines **Python for Exploratory Data Analysis, SQL for business analysis, and Tableau for interactive visualization**.
+## 📌 Project Overview
 
----
+The analysis focuses on three business questions:
 
-# 📌 Project Overview
+- Which products, regions, and customers contribute most to profitability?
+- Where do strong sales hide low margins or losses?
+- How do discount levels and seasonal patterns relate to business performance?
 
-This project analyzes the Superstore dataset to answer important business questions and identify patterns in sales and profitability.
+## 📊 Tableau Dashboards
 
-The analysis covers:
+### 📈 Sales Overview
 
-- 📈 Sales & Profit Performance
-- 🏷️ Category & Sub-Category Analysis
-- 🌎 Regional & Geographic Analysis
-- 👥 Customer Analysis
-- 📦 Product Performance
-- 💰 Discount Impact
-- 🚚 Shipping Mode Analysis
-- 📅 Time-Based Sales Trends
-- 🔍 Advanced SQL Analysis
+Sales, profit, orders, monthly sales patterns, category contribution, and regional performance.
 
----
+![Sales Overview Dashboard](screenshots/sales_dashboard_screenshot.png)
 
-# 🎯 Business Objectives
+### 👥 Customer Overview
 
-The main objectives of this project are to:
+Customer count, sales per customer, top customers, and order frequency.
 
-- Analyze overall sales and profit performance
-- Identify top-performing categories and sub-categories
-- Analyze regional and segment-level performance
-- Identify high-value customers
-- Identify profitable and loss-making products
-- Understand the relationship between discounts and profitability
-- Analyze sales trends over time
-- Evaluate shipping mode performance
-- Generate actionable business insights
+![Customer Overview Dashboard](screenshots/customer_dashboard_screenshot.png)
 
----
+Both dashboards support year filtering. The screenshots show the combined 2023–2026 period.
 
-# 🛠️ Tools & Technologies
+[📥 Download the Tableau workbook](dashboard/superstore_dashboard.twb)
 
-### 🐍 Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+## 📑 Dataset and Key Metrics
 
-### 🗄️ SQL
-- PostgreSQL
-- Aggregations
-- Joins
-- CTEs
-- Subqueries
-- Window Functions
-- Ranking Functions
-- Date & Time Analysis
+The project uses the Superstore sample retail dataset in [`data/superstore.xlsx`](data/superstore.xlsx), containing three worksheets: **Orders, People, and Returns**.
 
-### 📊 Tableau
-- Interactive Dashboards
-- KPI Visualization
-- Filters
-- Sales & Profit Analysis
-- Geographic Analysis
-- Trend Analysis
+| Dataset detail | Value |
+|---|---|
+| Period represented | January 2023–December 2026 |
+| Sales line items | 10,194 |
+| Unique orders | 5,111 |
+| Unique customers | 804 |
 
-### 📑 Excel
-- Source Dataset
-- Data Storage
+| Business metric | Value |
+|---|---:|
+| Total sales | $2,326,534 |
+| Total profit | $292,297 |
+| Profit margin | 12.56% |
+| Average order value | $455.20 |
+| Sales per customer | $2,893.70 |
 
----
+Each row in Orders represents a sales line item. Orders and customers are counted using distinct Order IDs and Customer IDs. Profit margin is total profit divided by total sales.
 
-# Business Insights
+The dates represent the supplied sample dataset, not current business results.
 
-- Technology is the strongest profit contributor. It generated 36.1% of sales but 50.1% of total profit. Copiers alone delivered $56.1K profit at a 37.2% margin, making them a priority for targeted sales campaigns.
+## 💡 Business Insights
 
-- Furniture sales deliver limited profitability. Furniture contributed 32.4% of revenue but only 6.8% of profit, with a 2.6% margin. Tables recorded a $17.8K loss, highlighting the need to review pricing, discounts, and product costs.
+- **Technology contributed the most profit**, generating **36.1% of sales and 50.1% of total profit**. Copiers alone delivered **$56.1K in profit at a 37.2% margin**.
 
-- Deep discounts are associated with substantial losses. Sales lines discounted above 20% collectively recorded a $136.0K loss on $364.8K revenue. Introduce margin checks and approval requirements for deeper discounts.
+- **Furniture delivered strong sales but limited profitability**, contributing **32.4% of revenue and only 6.8% of profit**, with a **2.6% margin**. Tables recorded a **$17.8K loss**.
 
-- Regional performance reveals a profitability gap. West led with $739.8K sales and a 15.0% margin, while Central earned only a 7.9% margin on $503.2K sales. Investigate Central’s product mix and discount practices before expanding sales.
+- **Deep discounts were associated with substantial losses**: sales lines discounted above **20%** collectively recorded a **$136.0K loss on $364.8K in revenue**.
 
-- Demand consistently peaks in the fourth quarter. Q4 was the highest-sales quarter in every dataset year and contributed 38.3% of total revenue. Plan inventory, staffing, and campaigns ahead of October–December.
+- **Regional profitability varied considerably**: West led with **$739.8K in sales and a 15.0% margin**, while Central generated **$503.2K in sales but only a 7.9% margin**.
 
-- The highest-spending customer is not the most profitable. Sean Miller generated $25.0K in sales but a $2.0K loss, while Tamara Chand generated $19.1K in sales and $9.0K profit. Include profitability alongside revenue when prioritizing customer rewards and account management.
+- **Sales consistently peaked in the fourth quarter**, which was the highest-sales quarter in every dataset year and contributed **38.3% of total revenue**.
 
----
+- **High customer spending did not guarantee profitability**: Sean Miller generated **$25.0K in sales but a $2.0K loss**, while Tamara Chand generated **$19.1K in sales and $9.0K in profit**.
 
-# 🔄 Project Workflow
+## 🛠️ Tools and Methods
+
+| Tool | Application |
+|---|---|
+| 🐍 Python | Exploratory analysis using Pandas, NumPy, Matplotlib, and Seaborn |
+| 🗄️ PostgreSQL | Business analysis using aggregations, joins, CTEs, and window functions |
+| 📊 Tableau | Interactive sales and customer dashboards |
+| 📑 Excel | Source workbook containing Orders, People, and Returns |
+
+The notebook examines missing values, duplicates, distributions, outliers, sales trends, and relationships between business variables.
+
+The SQL scripts cover sales, profitability, categories, geography, customers, products, discounts, shipping, and returns.
+
+## 📂 Repository Structure
 
 ```text
-📑 Superstore Dataset
-        ↓
-🐍 Python EDA
-        ↓
-🗄️ SQL Business Analysis
-        ↓
-📊 Tableau Dashboard
-        ↓
-💡 Business Insights
-
+superstore-sales-analysis/
+├── data/
+│   └── superstore.xlsx
+├── notebooks/
+│   └── superstore_eda.ipynb
+├── sql/
+│   └── SQL scripts organized by business topic
+├── dashboard/
+│   └── superstore_dashboard.twb
+├── screenshots/
+│   ├── customer_dashboard_screenshot.png
+│   └── sales_dashboard_screenshot.png
+└── README.md
 ```
+
+## 🚀 How to Reproduce
+
+1. Clone or download this repository.
+2. Install the Python dependencies:
+
+   ```bash
+   pip install pandas numpy matplotlib seaborn jupyter openpyxl sqlalchemy psycopg2-binary
+   ```
+
+3. Open `notebooks/superstore_eda.ipynb`. When running from the notebooks directory, set:
+
+   ```python
+   FILE = "../data/superstore.xlsx"
+   ```
+
+4. Run the exploratory analysis cells.
+5. Create a PostgreSQL database and configure the notebook’s connection for your environment. Review the export cells before running them: they replace existing `orders`, `people`, and `returns` tables.
+6. Execute the SQL scripts against the loaded tables.
+7. Open `dashboard/superstore_dashboard.twb` in Tableau and reconnect its data source to the supplied workbook.
+
+## 📝 Interpretation Notes
+
+- Findings describe patterns in sample data; they do not establish causation.
+- With all years selected, the monthly sales chart combines the same calendar month across years.
+- Existing return-rate calculations measure the share of sales lines associated with returned orders, not the percentage of distinct orders returned.
