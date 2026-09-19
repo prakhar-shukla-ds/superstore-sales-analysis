@@ -1,60 +1,89 @@
-Python EDA
+# 🛍️ Superstore Sales Analysis
 
+### 📊 End-to-End Data Analytics Project | SQL • Python • Tableau
 
+An end-to-end **Data Analytics project** analyzing Superstore sales data to uncover insights into sales, profitability, customers, products, regions, discounts, and shipping performance.
 
-The Jupyter Notebook covers exploratory analysis of the Superstore dataset, including data understanding, data quality checks, distributions, trends, and category, customer, product, and regional analysis.
+The project combines **Python for Exploratory Data Analysis, SQL for business analysis, and Tableau for interactive visualization**.
 
+---
 
+# 📌 Project Overview
 
-SQL Analysis
+This project analyzes the Superstore dataset to answer important business questions and identify patterns in sales and profitability.
 
+The analysis covers:
 
+- 📈 Sales & Profit Performance
+- 🏷️ Category & Sub-Category Analysis
+- 🌎 Regional & Geographic Analysis
+- 👥 Customer Analysis
+- 📦 Product Performance
+- 💰 Discount Impact
+- 🚚 Shipping Mode Analysis
+- 📅 Time-Based Sales Trends
+- 🔍 Advanced SQL Analysis
 
-SQL queries are organized into separate files covering:
+---
 
+# 🎯 Business Objectives
 
+The main objectives of this project are to:
 
-Data exploration and overview
+- Analyze overall sales and profit performance
+- Identify top-performing categories and sub-categories
+- Analyze regional and segment-level performance
+- Identify high-value customers
+- Identify profitable and loss-making products
+- Understand the relationship between discounts and profitability
+- Analyze sales trends over time
+- Evaluate shipping mode performance
+- Generate actionable business insights
 
-Sales and profit analysis
+---
 
-Category and sub-category analysis
+# 🛠️ Tools & Technologies
 
-Region, segment, and geographic analysis
+### 🐍 Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-Time trends
+### 🗄️ SQL
+- PostgreSQL
+- Aggregations
+- Joins
+- CTEs
+- Subqueries
+- Window Functions
+- Ranking Functions
+- Date & Time Analysis
 
-Customer analysis
+### 📊 Tableau
+- Interactive Dashboards
+- KPI Visualization
+- Filters
+- Sales & Profit Analysis
+- Geographic Analysis
+- Trend Analysis
 
-Product analysis
+### 📑 Excel
+- Source Dataset
+- Data Storage
 
-Discount impact
+---
 
-Shipping mode analysis
+# 🔄 Project Workflow
 
-People and returns analysis
-
-Advanced window functions
-
-Tableau Dashboard
-
-
-
-The Tableau workbook provides an interactive dashboard for analyzing Superstore sales and business performance.
-
-
-
-Dataset
-
-
-
-The project uses the Superstore dataset provided in the data folder.
-
-
-
-Author
-
-
-
-Prakhar Shukla
-
+```text
+📑 Superstore Dataset
+        ↓
+🐍 Python EDA
+        ↓
+🗄️ SQL Business Analysis
+        ↓
+📊 Tableau Dashboard
+        ↓
+💡 Business Insights
